@@ -13,7 +13,7 @@ class SnippetList(generics.ListCreateAPIView):
     List all snippets, or create a new snippet.
     """
 
-    queryset = Snippet.objects.add()
+    queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
 
 
